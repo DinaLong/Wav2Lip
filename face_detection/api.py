@@ -28,7 +28,7 @@ class FaceAlignment:
       
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  
 
-        faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+        faces = face_cascade.detectMultiScale(gray, 1.5, 5)
         bboxlist = [] 
         for (x,y,w,h) in faces:  
           box = (x, y, x+w, y+h)
